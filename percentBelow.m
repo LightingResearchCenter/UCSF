@@ -10,7 +10,9 @@ clc
 timestamp = datestr(now,'yyyy-mm-dd HHMM');
 
 %% Enable dependencies
-addpath('C:\Users\jonesg5\Documents\GitHub\d12pack')
+[githubDir,~,~] = fileparts(pwd);
+d12packDir = fullfile(githubDir,'d12pack');
+addpath(d12packDir);
 
 %% Map file paths
 [ucsfDir, csvDir, matDir, tablesDir, plotDir, csvPaths, matPath] = mapPaths(timestamp);
