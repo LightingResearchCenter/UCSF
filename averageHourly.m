@@ -22,7 +22,7 @@ xlsxPath = fullfile(tablesDir, xlsxName);
 
 
 %% Read data from disk
-T = readData(matPath);
+T = readData(matPath,csvPaths);
 
 %% Iterate through data
 H = struct; % Create a structure to hold results

@@ -24,7 +24,7 @@ figName = [timestamp,' phasor.pdf'];
 figPath = fullfile(plotDir, figName);
 
 %% Read data from disk
-T = readData(matPath);
+T = readData(matPath,csvPaths);
 
 %% Iterate through data
 P = table; % Table to hold results

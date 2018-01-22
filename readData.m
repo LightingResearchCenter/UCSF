@@ -1,4 +1,4 @@
-function T = readData(matPath)
+function T = readData(matPath,csvPaths)
 %READDATA Summary of this function goes here
 %   Detailed explanation goes here
 
